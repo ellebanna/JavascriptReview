@@ -1,0 +1,38 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<style>
+
+</style>
+</head>
+<body>
+
+<div id= "about" style="height: 150px; width: 300px; background-color: lightblue"></div>
+    <button type= "button" id="show">show</button>
+    <button type= "button" id="hide">hide</button>
+    <button type= "button" id="toogle">toggle</button>
+
+</body>
+
+<script>
+    $(document).ready(function(){
+
+        $("#about").click(function(){
+            $(this).html("Cliked");
+        });
+
+        $("#show").click(function(){
+            $("#about").show();
+        });
+
+        $("#hide").click(function(){
+            $("#about").hide();
+        });
+
+        $("#toogle").click(function(){
+            $("#about").toggle();
+        });
+    });
+    </script>
+</html>
